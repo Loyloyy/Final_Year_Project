@@ -1,9 +1,45 @@
-﻿<Application x:Class="Data_Processing.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Data_Processing"
-             StartupUri="MainWindow.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
-</Application>
+<Window x:Class="Data_Processing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <StackPanel>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" Height="240">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="To convert MPT to Excel format:" />
+            <Label Grid.Row="4" Grid.Column="0" Content="For debugging purposes:" />
+            <Label Grid.Row="6" Grid.Column="0" Content="Progress: " FontSize="20" Margin="0,0.2,0,-0.8"/>
+            <Label Grid.Row="6" Grid.Column="1" Content="--- " x:Name="lblProgress" FontSize="20" Margin="0,0.2,0,-0.8"/>
+
+            <TextBox x:Name="MPTfoldername" Grid.Column="1" Grid.Row="0" Margin="3,3,3,2.2" Text="Please select folder (MPT conversion)"/>
+            <TextBox x:Name="matlabfoldername" Grid.Column="1" Grid.Row="4" Margin="3,3,3,2.2" Text="Please select folder"/>
+
+            <Button x:Name="selectMPTfolder" Grid.Row="0" Grid.Column="2" MinHeight="30" MinWidth="60" Margin="0,4.4,3,6" Content="Select" Click="MPTfolderselect_Click" Width="67"/>
+            <Button x:Name="MPTtoxlsxstep" Grid.Row="1" Grid.Column="2" MinHeight="30" MinWidth="60" Margin="0,4.4,3,6" Content="MPT-XLSX" Click="MPTtoxlsxstep_Click" Width="67"/>
+            <Button x:Name="xlsxtodatastep" Grid.Row="2" Grid.Column="2" MinHeight="30" MinWidth="60" Margin="0,4.4,3,6" Content="XLSX-Data" Click="xlsxtodatastep_Click" Width="67"/>
+            <Button x:Name="everything" Grid.Row="3" Grid.Column="2" MinHeight="30" MinWidth="60" Margin="0,4.4,3,6" Content="Everything" Click="everything_Click" Width="67"/>
+
+            <Button x:Name="matlabfolderselect" Grid.Row="4" Grid.Column="2" MinHeight="30" MinWidth="60" Margin="0,4.4,3,6" Content="Select" Click="matlabfolderselect_Click" Width="67"/>
+
+        </Grid>
+        
+    </StackPanel>
+    
+</Window>
