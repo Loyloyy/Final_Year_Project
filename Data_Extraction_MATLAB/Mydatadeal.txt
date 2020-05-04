@@ -1,0 +1,32 @@
+function mydatagather
+for i=1:1:2
+t1=xlsread('S00418002068_1st Cycle_C01consxout.xlsx');
+t2=xlsread('S00418002068_2nd Cycle_C01consxout.xlsx');
+t3=xlsread('S00418002068_3rd Cycle_C01consxout.xlsx');
+t4=xlsread('S00418002068_4th Cycle_C01consxout.xlsx');
+t5=xlsread('S00418002068_5th Cycle_C01consxout.xlsx');
+t6=xlsread('S00418002068_6th Cycle_C01consxout.xlsx');
+t7=xlsread('S00418002068_7th Cycle_C01consxout.xlsx');
+t8=xlsread('S00418002068_8th Cycle_C01consxout.xlsx');
+t9=xlsread('S00418002068_9th Cycle_C01consxout.xlsx');
+t10=xlsread('S00418002068_10th Cycle_C01consxout.xlsx');
+t11=xlsread('S00418002068_11th Cycle_C01consxout.xlsx');
+t12=xlsread('S00418002068_12th Cycle_C01consxout.xlsx');
+t13=xlsread('S00418002068_13th Cycle_C01consxout.xlsx');
+t14=xlsread('S00418002068_14th Cycle_C01consxout.xlsx');
+t15=xlsread('S00418002068_15th Cycle_C01consxout.xlsx');
+t16=xlsread('S00418002068_16th Cycle_C01consxout.xlsx');
+t17=xlsread('S00418002068_17th Cycle_C01consxout.xlsx');
+t18=xlsread('S00418002068_18th Cycle_C01consxout.xlsx');
+t19=xlsread('S00418002068_19th Cycle_C01consxout.xlsx');
+t20=xlsread('S00418002068_20th Cycle_C01consxout.xlsx');
+t21=xlsread('S00418002068_21st Cycle_C01consxout.xlsx');
+t22=xlsread('S00418002068_22nd Cycle_C01consxout.xlsx');
+t23=xlsread('S00418002068_23rd Cycle_C01consxout.xlsx');
+t24=xlsread('S00418002068_24th Cycle_C01consxout.xlsx');
+
+xgather=[t1;t2;t3;t4;t5;t6;t7;t8;t9;t10;t11;t12;t13;t14;t15;t16;t17;t18;t19;t20;t21;t22;t23;t24];
+end
+xlswrite('S00418002068_xgather.xlsx',xgather);
+
+end
