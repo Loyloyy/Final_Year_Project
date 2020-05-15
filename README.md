@@ -12,6 +12,7 @@ Firstly, it is very important to scale the data before using PCA. More informati
 
 
 Also, one confusing step might be to sort the rows of values based on the descending order of the labels column (Capacity). The main motivation was because in not doing so, the model created will not be a smooth regression line predicting the degradation of capacity. Instead, it will constantly go from a top value to the middle/bottom and up again constantly, creating a messy sphagetti look as shown below.
+![Alt Text](https://user-images.githubusercontent.com/64775878/82097674-f2282700-9735-11ea-92dd-b7d8d7e66d08.jpg)
 
 I eventually determined the cause was due to the fluctuating capacity of the battery test. For example, we will expect the capacity to degrade by X% after several cycles, however in some instances, the capacity went up instead. I did not pursue the reasoning of the fluctuating capacity as it was outside the scope of my ISP but classified it as a potential future work to be conducted
 
