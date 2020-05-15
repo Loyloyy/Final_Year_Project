@@ -5,13 +5,30 @@ The scripts and kernels included in this repository showcases my work that I hav
 
 The results are not mentioned here due to confidentiality as it is a industrial sponsored project.
 
-## Code Explanations
+### Content and algorithms I used
+With regards to data extraction and automation, the primary languages I utilised included C# and MATLAB.
+
+For feature engineering, the main algorithms and methods I used includes
+- Pearson's Correlation Coefficient
+- Principal Component Analysis
+- Data Wrangling
+
+Algorthims I used included,
+- Support Vector Regression
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbour
+- Extremel Learning Machine
+
+
+### Code Explanations
 I will like to highlist and reiterate some important things to note if anyone wants to understand several of the actions I took.
 
 Firstly, it is very important to scale the data before using PCA. More information can be found in the link here, https://stats.stackexchange.com/questions/69157/why-do-we-need-to-normalize-data-before-principal-component-analysis-pca
 
 
 Also, one confusing step might be to sort the rows of values based on the descending order of the labels column (Capacity). The main motivation was because in not doing so, the model created will not be a smooth regression line predicting the degradation of capacity. Instead, it will constantly go from a top value to the middle/bottom and up again constantly, creating a messy sphagetti look as shown below.
+
 ![Alt Text](https://user-images.githubusercontent.com/64775878/82097674-f2282700-9735-11ea-92dd-b7d8d7e66d08.jpg)
 
 I eventually determined the cause was due to the fluctuating capacity of the battery test. For example, we will expect the capacity to degrade by X% after several cycles, however in some instances, the capacity went up instead. I did not pursue the reasoning of the fluctuating capacity as it was outside the scope of my ISP but classified it as a potential future work to be conducted
