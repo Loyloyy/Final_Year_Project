@@ -1,4 +1,4 @@
-# Final_Year_Project
+# Industrial Sponsored Project with Rolls Royce (aka FYP)
 
 ### Synopsis
 The scripts and kernels included in this repository showcases my work that I have done and created through my industrial sponsored project. The aim of the project was to find ways to do feature selection for the degradation of battery's health. As such, I decided to utilise methods such as finding the correlation coefficient, principal component analysis and data wrangling to create new features that allow us to better predict the battery's capacity through the cycles
